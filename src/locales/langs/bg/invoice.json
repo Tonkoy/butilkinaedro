@@ -1,0 +1,38 @@
+{
+  "general": {
+    "newInvoice": "Нова фактура",
+    "invoiceNumber": "Номер на фактура",
+    "createDate": "Дата на създаване",
+    "dueDate": "Краен срок",
+    "amount": "Сума",
+    "sent": "Изпратена",
+    "status": "Статус",
+    "all": "Всички",
+    "paid": "Платена",
+    "pending": "Изчакваща",
+    "overdue": "Просрочена",
+    "draft": "Чернова",
+    "deleteConfirmTitle": "Изтриване",
+    "deleteConfirmContent": "Сигурни ли сте, че искате да изтриете <strong>{count}</strong> елемента?",
+    "loading": "Зареждане на фактури...",
+    "error": "Грешка при зареждане на фактурите.",
+    "invoices": "фактури"
+  },
+  "filters": {
+    "name": "Търсене по номер или клиент",
+    "service": "Услуга",
+    "status": "Статус",
+    "dateRange": "Период",
+    "searchCustomerOrInvoiceNumber": "Търси по име или номер на фактура",
+    "startDate": "Начална дата",
+    "endDate": "Крайна дата",
+    "dateError": "Началната дата трябва да бъде преди крайната"
+  },
+  "status": {
+    "total": "Общо",
+    "paid": "Платени",
+    "pending": "Изчакващи",
+    "overdue": "Просрочени",
+    "draft": "Чернови"
+  }
+}

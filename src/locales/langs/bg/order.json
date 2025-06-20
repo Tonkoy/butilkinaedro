@@ -1,0 +1,42 @@
+{
+  "table": {
+    "list": "Списък",
+    "dashboard": "Табло",
+    "orders": "Поръчки",
+    "all": "Табло",
+    "received": "Получена",
+    "completed": "Завършена",
+    "cancelled": "Отказана",
+    "inProgress": "В обработка",
+    "refunded": "Върната",
+    "orderId":  "Номер на поръчката",
+    "recipient": "Получател",
+    "createdAt": "Дата",
+    "status": "Статус",
+    "paymentType": "Тип на плащането",
+    "paymentStatus": "Статус на плащането",
+    "orderStatus": "Статус на поръчката",
+    "total": "Общо",
+    "totalItems": "Общо продукти",
+    "actions": "Действия",
+    "cash": "Наложен платеж",
+    "bank": "Банков превод",
+    "card" : "Картово плащане"
+  },
+  "text": {
+    "order": "Поръчка",
+    "print": "Печат",
+    "subtotal": "Общо",
+    "shipping": "Доставка",
+    "total": "Крайна сума",
+    "discount": "Отстъпка",
+    "taxes": "Данъци (ДДС)",
+    "details": "Детайли"
+  },
+  "filters": {
+    "searchCustomerOrOrderNumber": "Търси по име или номер на поръчка",
+    "startDate": "Начална дата",
+    "endDate": "Крайна дата",
+    "dateError": "End date must be later than start date"
+  }
+}

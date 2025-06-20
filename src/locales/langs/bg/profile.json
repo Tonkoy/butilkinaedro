@@ -1,0 +1,69 @@
+{
+  "general": {
+    "firstName": "Име",
+    "lastName": "Фамилия",
+    "phone": "Телефон",
+    "phonePlaceholder": "Моля, въведете телефонен номер",
+    "email": "Емейл",
+    "country": "Държава",
+    "address": "Адрес",
+    "state": "Област",
+    "city": "Град",
+    "zipCode": "Пощенски код",
+    "isPublic": "Публичен профил"
+  },
+  "addresses": {
+    "addressesList": "Списък с адреси",
+    "address": "Адрес",
+    "addAddress": "Добави адрес",
+    "addAddressTitle": "Добави адрес",
+    "editAddress": "Редактирай адрес",
+    "editAddressTitle": "Редактирай адрес",
+    "setAsDefault": "Избери за основен",
+    "newAddress": "Нов адрес",
+    "addressName": "Име на адреса (напр. У дома )",
+    "contactName": "Лице за контакт",
+    "phone": "Телефон",
+    "phonePlaceholder": "Въведете телефон",
+    "city": "Град",
+    "addressField": "Адрес",
+    "primaryLabel": "Използвай адреса като основен.",
+    "errors": {
+      "cityRequired": "Града е задължителен!",
+      "nameRequired": "Името е задължително!",
+      "addressRequired": "Адресът е задължителен!",
+      "countryRequired": "Държавата е задължителна!",
+      "phoneInvalid": "Моля, въведете валиден телефонен номер!"
+    }
+  },
+  "menu": {
+    "general": "Основна информация",
+    "addresses": "Адреси",
+    "notifications": "Уведомления",
+    "settings": "Настройки",
+    "companyData": "Фирмени данни"
+  },
+  "company": {
+    "companyName": "Наименование",
+    "companyTaxId": "ЕИК (Булстат)",
+    "vatRegistration": "Регистрация по ДДС",
+    "vatId": "ДДС Номер",
+    "companyAddress": "Адрес на фирмата",
+    "companyCity": "Град",
+    "country": "Държава",
+    "companyOwner": "МОЛ",
+    "phone": "Телефон на фирмата"
+  },
+  "password": {
+    "oldPassword": "Стара парола",
+    "newPassword": "Нова парола",
+    "confirmNewPassword": "Потвърдете новата парола",
+    "minLength": "Паролата трябва да бъде поне 6 символа!",
+    "required": "Полето е задължително!",
+    "different": "Новата парола трябва да се различава от старата",
+    "mismatch": "Паролите не съвпадат!",
+    "changeSuccess": "Паролата е обновена успешно",
+    "changeError": "Неуспешна промяна на паролата",
+    "save": "Запази промените"
+  }
+}

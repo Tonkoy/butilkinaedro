@@ -1,0 +1,20 @@
+{
+  "general": {
+    "title": "Къде да ни намерите?",
+    "formTitle": "Потърсете ни !",
+    "formSubtitle": "Ще се радваме да чуем вашето мнение"
+  },
+  "formFields": {
+    "parentCategory": "Главна категория",
+    "status": "Активна категория",
+    "name": "Наименование",
+    "description": "Описание",
+    "image": "Снимка",
+    "slug": "Slug",
+    "key": "Ключ",
+    "seoTitle": "SEO Заглавие",
+    "seoDescription": "SEO Описание",
+    "seoKeywords": "SEO Ключови думи",
+    "ogImageUrl": "OG Image URL"
+  }
+}

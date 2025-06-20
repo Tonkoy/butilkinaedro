@@ -1,0 +1,47 @@
+{
+  "general": {
+    "details": "Детайли",
+    "seo": "SEO Настройки",
+    "properties": "Допълнително",
+    "pricing": "Ценообразуване",
+    "variations": "Варианти",
+    "variationSubtitle": "Менажирай вариантите (цвят, размер, цена...)",
+    "additionalOptions": "Допълнителни функции и атрибути...",
+    "includesTaxes": "Цената включва данъци",
+    "publish": "Публикувай",
+    "createProduct": "Създай продукт",
+    "saveChanges": "Запази промените",
+    "additional": "Допълнително",
+    "productCode": "Продуктов код"
+  },
+  "formFields": {
+    "name": "Име на продукта",
+    "slug": "Slug",
+    "description": "Описание",
+    "defaultImage": "Основна снимка",
+    "category": "Категория",
+    "tags": "Тагове",
+    "price": "Цена",
+    "priceSale": "Намалена цена",
+    "taxes": "Данък (%)",
+    "quantity": "Количество",
+    "seoTitle": "SEO Заглавие",
+    "seoDescription": "SEO Описание",
+    "seoKeywords": "SEO Ключови думи",
+    "ogImageUrl": "OG Image URL",
+    "variationName": "Име",
+    "variationImage": "Снимка",
+    "variationColor": "Цвят",
+    "variationSize": "Размер",
+    "variationPrice": "Цена",
+    "variationDiscountedPrice": "Намалена цена",
+    "variationStock": "На склад",
+    "variationIsAvailable": "Наличен",
+    "variationIsDefault": "По подразбиране",
+    "content": "Садържание"
+  },
+  "messages": {
+    "createSuccess": "Продуктът е създаден успешно!",
+    "updateSuccess": "Продуктът е обновен успешно!"
+  }
+}
