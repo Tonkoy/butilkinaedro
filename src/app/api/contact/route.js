@@ -18,10 +18,10 @@ export async function POST(req) {
     await newCallback.save();
 
     const msg = {
-      from: 'info@butilko.com',
+      from: 'info@butilkinaedro.com',
       to: email,
       templateId: 'd-2983f3d43b9a4827a0779187163e1197',
-      bcc: ['orders@butilko.com'],
+      bcc: ['orders@butilkinaedro.com'],
       dynamic_template_data: { name },
     };
 

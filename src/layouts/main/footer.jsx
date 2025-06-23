@@ -129,7 +129,7 @@ export function Footer({ layoutQuery, sx }) {
         </Grid>
 
         <Typography variant="body2" sx={{ mt: 10 }}>
-          © All rights reserved.
+          © Всички права запазени. Butilkinaedro.com
         </Typography>
       </Container>
     </Box>

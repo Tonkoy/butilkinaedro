@@ -5,7 +5,7 @@ import packageJson from '../package.json';
 // ----------------------------------------------------------------------
 
 export const CONFIG = {
-  name: 'BUTILKO - Бутилки, термоси и термо чаши на едро и дребно',
+  name: 'Butilkinaedro - Бутилки, термоси и термо чаши на едро и дребно',
   description: 'Бутилки, термоси и термо чаши на едро и дребно',
   appName: 'Лазерно гравиране на бутилки, чаши',
   appVersion: packageJson.version,

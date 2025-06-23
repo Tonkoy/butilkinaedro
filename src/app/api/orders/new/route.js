@@ -50,12 +50,12 @@ export async function POST(req) {
 
     try {
       const msg = {
-        to: "no-reply@butilko.com",
-        from: "info@butilko.com",
+        to: "no-reply@butilkinaedro.com",
+        from: "info@butilkinaedro.com",
         templateId: "d-6c17d65a6f904e92ad47ceb011f0c94b",
         dynamic_template_data: {
           orderId: newOrder?.orderId || newOrder?._id,
-          orderLink: `https://butilko.com/dashboard/orders/${newOrder._id}`
+          orderLink: `https://butilkinaedro.com/dashboard/orders/${newOrder._id}`
         }
       };
 

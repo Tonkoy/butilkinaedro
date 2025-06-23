@@ -90,7 +90,7 @@ export function InvoicePDF({ invoice, currentStatus }) {
 
   const renderHeader = (
     <View style={[styles.container, styles.mb40]}>
-      <Image source="/logo/butilko_logo.svg" style={{ width: 48, height: 48 }} />
+      <Image source="/logo/butilkinaedro_logo.svg" style={{ width: 48, height: 48 }} />
 
       <View style={{ alignItems: 'flex-end', flexDirection: 'column' }}>
         <Text style={[styles.h3, { textTransform: 'capitalize' }]}>{getInvoiceStatusLabel(currentStatus)}</Text>
@@ -108,7 +108,7 @@ export function InvoicePDF({ invoice, currentStatus }) {
       </View>
       <View style={{ width: '25%', textAlign: 'right' }}>
         <Text style={styles.subtitle2}>Проблем с фактурата ?</Text>
-        <Text>info@butilko.com</Text>
+        <Text>info@butilkinaedro.com</Text>
       </View>
     </View>
   );

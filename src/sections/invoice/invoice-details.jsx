@@ -118,7 +118,7 @@ export function InvoiceDetails({ invoice }) {
 
         <Grid xs={12} md={3} sx={{ py: 3, textAlign: 'right' }}>
           <Typography variant="subtitle2">Проблем с фактурата ?</Typography>
-          <Typography variant="body2">info@butilko.com</Typography>
+          <Typography variant="body2">info@butilkinaedro.com</Typography>
         </Grid>
     </Grid>
   );
@@ -188,7 +188,7 @@ export function InvoiceDetails({ invoice }) {
           <Box
             component="img"
             alt="logo"
-            src="/logo/butilko_logo.svg"
+            src="/logo/butilkinaedro_logo.svg"
             sx={{ width: 48, height: 48 }}
           />
 

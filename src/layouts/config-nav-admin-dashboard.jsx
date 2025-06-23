@@ -65,8 +65,8 @@ export const adminNavData = [
         path: paths.dashboard.categories.root,
         icon: ICONS.categories,
         children: [
-          { title: 'Списък', path: paths.dashboard.product.root },
-          { title: 'Създай продукт', path: paths.dashboard.product.new }
+          { title: 'Списък', path: paths.dashboard.categories.root },
+          { title: 'Създай категория', path: paths.dashboard.categories.new }
           /*
           { title: 'Детайли', path: paths.dashboard.categories.details },
           { title: 'Промени категория', path: paths.dashboard.categories.edit },*/
