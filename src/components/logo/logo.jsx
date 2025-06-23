@@ -72,7 +72,7 @@ export const Logo = forwardRef(
 
     const baseSize = {
       width: width ?? 250,
-      height: height ?? 100,
+      height: height ?? 90,
       ...(!isSingle && {
         width: width ?? 102,
         height: height ?? 36,

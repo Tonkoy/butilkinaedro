@@ -64,13 +64,13 @@ export function HomeHero({ sx, ...other }) {
           ...theme.typography.h2,
           my: 0,
           mx: 'auto',
-          maxWidth: 680,
+          maxWidth: 800,
           fontFamily: theme.typography.fontSecondaryFamily,
           [theme.breakpoints.up(lgKey)]: { fontSize: 72, lineHeight: '90px' },
         }}
       >
         <Box component="span" sx={{ width: 1, opacity: 0.24 }}>
-          Навсякъде с теб e
+          Всяка идея заслужава
         </Box>
 
         <Box
@@ -90,7 +90,7 @@ export function HomeHero({ sx, ...other }) {
             ml: { xs: 0.75, md: 1, xl: 1.5 },
           }}
         >
-          Butilko
+          правилната бутилка
         </Box>
       </Box>
     </AnimatedDiv>
