@@ -19,13 +19,13 @@ import { HomeHighlightFeatures } from '../home-highlight-features';
 
 // ----------------------------------------------------------------------
 
-export function HomeView() {
+export function HomeViewBottles() {
   const pageProgress = useScrollProgress();
 
   return (
     <>
       <ScrollProgress
-        variant="linear"
+        variant="lineart"
         progress={pageProgress.scrollYProgress}
         sx={{ position: 'fixed' }}
       />
@@ -43,10 +43,14 @@ export function HomeView() {
         <HomeHugePackElements />
 */}
 
+{/*
         <HomeForDesigner />
+*/}
 
 
+{/*
         <HomeIntegrations />
+*/}
 
 {/*
         <HomePricing />

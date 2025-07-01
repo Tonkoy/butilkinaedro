@@ -31,9 +31,9 @@ export function HomeMinimal({ sx, ...other }) {
   const renderDescription = (
     <>
       <SectionTitle
-        caption="Visualizing Success"
-        title="What's in"
-        txtGradient="Minimal?"
+        caption="Butilkinaedro"
+        title="Какво можем да Ви"
+        txtGradient="предложим ?"
         sx={{ mb: { xs: 5, md: 8 }, textAlign: { xs: 'center', md: 'left' } }}
       />
 
@@ -90,8 +90,8 @@ export function HomeMinimal({ sx, ...other }) {
       >
         <Box
           component="img"
-          alt="Home Chart"
-          src={`${CONFIG.assetsDir}/assets/images/home/home-chart.webp`}
+          alt="tanik"
+          src={`${CONFIG.assetsDir}/assets/images/home/butilkinaedro_tanik.jpg`}
           sx={{ width: 720 }}
         />
       </Box>
@@ -134,18 +134,18 @@ export function HomeMinimal({ sx, ...other }) {
 
 const ITEMS = [
   {
-    icon: `${CONFIG.assetsDir}/assets/icons/home/ic-make-brand.svg`,
-    title: 'Branding',
-    description: 'Consistent design makes it easy to brand your own.',
+    icon: `${CONFIG.assetsDir}/assets/icons/home/ic-development.svg`,
+    title: 'Бърза и успешена система',
+    description: 'Поръчка в няколко лесни стъпки и бърза обработка на поръчката.',
   },
   {
     icon: `${CONFIG.assetsDir}/assets/icons/home/ic-design.svg`,
-    title: 'UI & UX design',
-    description: 'The kit is built on the principles of the atomic design system.',
+    title: 'Богато разнообразие от артикули',
+    description: 'Над 70 артикула между които да избирате.',
   },
   {
-    icon: `${CONFIG.assetsDir}/assets/icons/home/ic-development.svg`,
-    title: 'Development',
-    description: 'Easy to customize and extend, saving you time and money.',
-  },
+    icon: `${CONFIG.assetsDir}/assets/icons/home/ic-make-brand.svg`,
+    title: 'Брандиране/Персонализиране',
+    description: 'Персонализиране на бутилки посредством лазерно гравиране.',
+  }
 ];

@@ -19,7 +19,7 @@ import { HomeHighlightFeatures } from '../home-highlight-features';
 
 // ----------------------------------------------------------------------
 
-export function HomeView() {
+export function HomeViewBackpacks() {
   const pageProgress = useScrollProgress();
 
   return (

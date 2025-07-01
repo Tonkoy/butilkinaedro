@@ -53,7 +53,7 @@ export function HomeHighlightFeatures({ sx, ...other }) {
             alignItems={{ xs: 'center', md: 'flex-start' }}
             sx={{ textAlign: { xs: 'center', md: 'left' } }}
           >
-            <SectionTitle caption="App Features" title="Highlight" txtGradient="features" />
+            <SectionTitle caption="Разновидности" title="Бутилки, термоси," txtGradient="термо чаши" />
 
             <SvgIcon
               component={m.svg}
@@ -228,27 +228,45 @@ function Item({ item, sx, ...other }) {
 
 const ITEMS = [
   {
-    title: 'Dark mode',
-    subtitle: 'A dark theme that feels easier on the eyes.',
-    icon: 'solar:cloudy-moon-bold-duotone',
-    imgUrl: [`${CONFIG.assetsDir}/assets/images/home/highlight-darkmode.webp`],
-  },
-  {
-    title: 'Color presets',
-    subtitle: 'Express your own style with just one click.',
+    title: 'Термоси и термо бутилки',
+    subtitle: 'Разгледайте всички видове',
     icon: 'solar:pallete-2-bold-duotone',
     imgUrl: [
-      `${CONFIG.assetsDir}/assets/images/home/highlight-presets-1.webp`,
-      `${CONFIG.assetsDir}/assets/images/home/highlight-presets-2.webp`,
-      `${CONFIG.assetsDir}/assets/images/home/highlight-presets-3.webp`,
-      `${CONFIG.assetsDir}/assets/images/home/highlight-presets-4.webp`,
-      `${CONFIG.assetsDir}/assets/images/home/highlight-presets-5.webp`,
+      `${CONFIG.assetsDir}/assets/images/home/${process.env.NEXT_PUBLIC_FE_DOMAIN}_hero_1.png`,
+      `${CONFIG.assetsDir}/assets/images/home/${process.env.NEXT_PUBLIC_FE_DOMAIN}_hero_2.png`,
+/*      `${CONFIG.assetsDir}/assets/images/home/${process.env.NEXT_PUBLIC_FE_DOMAIN}_hero_7.png`,
+      `${CONFIG.assetsDir}/assets/images/home/${process.env.NEXT_PUBLIC_FE_DOMAIN}_hero_8.png`,*/
     ],
   },
   {
-    title: 'Right-to-left',
-    subtitle: 'Support languages such as Arabic, Persian, and Hebrew.',
-    icon: 'solar:align-right-bold-duotone',
-    imgUrl: [`${CONFIG.assetsDir}/assets/images/home/highlight-rtl.webp`],
+    title: 'Термо чаши',
+    subtitle: 'Високо качество',
+    icon: 'solar:pallete-2-bold-duotone',
+    imgUrl: [
+      `${CONFIG.assetsDir}/assets/images/home/${process.env.NEXT_PUBLIC_FE_DOMAIN}_hero_3.png`,
+    ],
+  },
+  {
+    title: 'Бутилка-колонка',
+    subtitle: 'термо бутилка и преносима колонка',
+    icon: 'solar:pallete-2-bold-duotone',
+    imgUrl: [
+      `${CONFIG.assetsDir}/assets/images/home/${process.env.NEXT_PUBLIC_FE_DOMAIN}_hero_4.png`,
+    ],
+  },
+  {
+    title: 'Детски термо бутилки',
+    subtitle: 'в различни цветове',
+    icon: 'solar:pallete-2-bold-duotone',
+    imgUrl: [
+      `${CONFIG.assetsDir}/assets/images/home/${process.env.NEXT_PUBLIC_FE_DOMAIN}_hero_5.png`,
+    ],
+  },
+  {
+    title: 'Бутилки с магнитен холдър',
+    icon: 'solar:pallete-2-bold-duotone',
+    imgUrl: [
+      `${CONFIG.assetsDir}/assets/images/home/${process.env.NEXT_PUBLIC_FE_DOMAIN}_hero_6.png`,
+    ],
   },
 ];

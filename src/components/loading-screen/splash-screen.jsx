@@ -26,7 +26,7 @@ export function SplashScreen({ portal = true, sx, ...other }) {
         }}
         {...other}
       >
-        <AnimateLogo1 />
+        <AnimateLogo1 isSingle/>
       </Box>
     </Box>
   );

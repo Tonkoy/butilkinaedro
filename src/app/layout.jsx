@@ -42,31 +42,32 @@ export default async function RootLayout({ children }) {
 
   return (
     <html lang={lang ?? 'en'} suppressHydrationWarning>
-      <body>
-        <InitColorSchemeScript
-          defaultMode={schemeConfig.defaultMode}
-          modeStorageKey={schemeConfig.modeStorageKey}
-        />
+    <body>
+    <InitColorSchemeScript
+      defaultMode={schemeConfig.defaultMode}
+      modeStorageKey={schemeConfig.modeStorageKey}
+    />
 
-        <I18nProvider lang={CONFIG.isStaticExport ? undefined : lang}>
-          <LocalizationProvider>
-            <AuthProvider>
-              <SettingsProvider settings={defaultSettings}>
-                <ThemeProvider>
-                  <MotionLazy>
-                    <CheckoutProvider>
-                      <Snackbar />
-                      <ProgressBar />
-                      <SettingsDrawer />
-                      {children}
-                    </CheckoutProvider>
-                  </MotionLazy>
-                </ThemeProvider>
-              </SettingsProvider>
-            </AuthProvider>
-          </LocalizationProvider>
-        </I18nProvider>
-      </body>
+    <I18nProvider lang={CONFIG.isStaticExport ? undefined : lang}>
+      <LocalizationProvider>
+        <AuthProvider>
+          <SettingsProvider settings={defaultSettings}>
+            <ThemeProvider>
+              <MotionLazy>
+                <CheckoutProvider>
+                  <Snackbar/>
+                  <ProgressBar/>
+                  {/*<SettingsDrawer />*/}
+                  {children}
+                </CheckoutProvider>
+              </MotionLazy>
+            </ThemeProvider>
+          </SettingsProvider>
+        </AuthProvider>
+      </LocalizationProvider>
+    </I18nProvider>
+    <script defer data-domain="butilkinaedro.com" src="https://plausible.io/js/script.js" />
+    </body>
     </html>
   );
 }

@@ -75,7 +75,7 @@ export function MainLayout({ sx, data, children, header }) {
                   onClose={mobileNavOpen.onFalse}
                 />
                 {/* -- Logo -- */}
-                <Logo />
+                <Logo isSingle={false}/>
               </>
             ),
             rightArea: (
@@ -103,7 +103,7 @@ export function MainLayout({ sx, data, children, header }) {
                     {authenticated && <AccountDrawer data={_account}  />}
                   </Stack>}
                   {/* -- Settings button -- */}
-                  <SettingsButton />
+                  {/*<SettingsButton />*/}
                 </Box>
               </>
             ),

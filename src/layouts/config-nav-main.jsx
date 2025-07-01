@@ -27,12 +27,12 @@ export const navData = [
     path: paths.faqs,
     icon: <Iconify width={22} icon="solar:atom-bold-duotone" />,
   },
-  {
+/*  {
     title: 'Components',
     path: paths.components,
     icon: <Iconify width={22} icon="solar:atom-bold-duotone" />,
-  },
-  {
+  },*/
+  /*{
     title: 'Pages',
     path: '/pages',
     icon: <Iconify width={22} icon="solar:file-bold-duotone" />,
@@ -81,5 +81,5 @@ export const navData = [
       },
       { subheader: 'Dashboard', items: [{ title: 'Dashboard', path: CONFIG.auth.redirectPath }] },
     ],
-  }
+  }*/
 ];
