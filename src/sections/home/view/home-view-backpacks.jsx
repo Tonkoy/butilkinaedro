@@ -16,6 +16,7 @@ import { HomeIntegrations } from '../home-integrations';
 import { HomeAdvertisement } from '../home-advertisement';
 import { HomeHugePackElements } from '../home-hugepack-elements';
 import { HomeHighlightFeatures } from '../home-highlight-features';
+import { HomeHeroBackpacks } from '../home-hero-backpacks';
 
 // ----------------------------------------------------------------------
 
@@ -32,7 +33,7 @@ export function HomeViewBackpacks() {
 
       <BackToTop />
 
-      <HomeHero />
+      <HomeHeroBackpacks />
 
       <Stack sx={{ position: 'relative', bgcolor: 'background.default' }}>
         <HomeHighlightFeatures />

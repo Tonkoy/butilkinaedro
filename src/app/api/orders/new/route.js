@@ -3,6 +3,9 @@ import OrderUpdates from 'src/mongo/models/OrderUpdates';
 import Order from 'src/mongo/models/Order';
 import User from 'src/mongo/models/User';
 import sgMail from "@sendgrid/mail";
+import {getCurrentTenant, getTenantConfig} from "../../../../config-tenants";
+const currentTenant = getCurrentTenant();
+const tenantConfig = getTenantConfig(currentTenant);
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 // GET method to fetch orders
@@ -50,9 +53,9 @@ export async function POST(req) {
 
     try {
       const msg = {
-        to: "no-reply@butilkinaedro.com",
-        from: "info@butilkinaedro.com",
-        templateId: "d-6c17d65a6f904e92ad47ceb011f0c94b",
+        to: "info@butilkinaedro.com",
+        from: tenantConfig.mailSender,
+        templateId: tenantConfig.mailTemplates.createOrder,
         dynamic_template_data: {
           orderId: newOrder?.orderId || newOrder?._id,
           orderLink: `https://butilkinaedro.com/dashboard/orders/${newOrder._id}`

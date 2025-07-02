@@ -4,7 +4,9 @@ import Activation from "src/mongo/models/Activation";
 import connectDB from "src/utils/connectDB";
 import sgMail from "@sendgrid/mail";
 import {CONFIG} from "../../../../config-global";
-
+import {getCurrentTenant, getTenantConfig} from "../../../../config-tenants";
+const currentTenant = getCurrentTenant();
+const tenantConfig = getTenantConfig(currentTenant);
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 function generateRandomString(length) {
@@ -65,8 +67,8 @@ export async function POST(req) {
     // Send activation email
     const msg = {
       to: email,
-      from: "no-reply@boilerplate.com",
-      templateId: "d-a15afe6217b04ce8a78b98b627eeea18",
+      from: tenantConfig.mailSender,
+      templateId: tenantConfig.mailTemplates.singUp,
       dynamic_template_data: {
         name: `${newUser.firstName} ${newUser.lastName}`,
         activationLink: `${process.env.LOCALHOST_URL}/auth/verify?email=${email}`,

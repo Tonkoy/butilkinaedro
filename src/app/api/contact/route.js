@@ -1,6 +1,8 @@
 import connectDB from 'src/utils/connectDB';
 import Callbacks from 'src/mongo/models/Callbacks';
-
+import {getCurrentTenant, getTenantConfig} from "../../../config-tenants";
+const currentTenant = getCurrentTenant();
+const tenantConfig = getTenantConfig(currentTenant);
 const sendGrid = require('@sendgrid/mail');
 sendGrid.setApiKey(process.env.SENDGRID_API_KEY); // FIX: corrected env key typo
 
@@ -18,9 +20,9 @@ export async function POST(req) {
     await newCallback.save();
 
     const msg = {
-      from: 'info@butilkinaedro.com',
+      from: tenantConfig.mailSender,
       to: email,
-      templateId: 'd-2983f3d43b9a4827a0779187163e1197',
+      templateId: tenantConfig.mailTemplates.contactForm,
       bcc: ['orders@butilkinaedro.com'],
       dynamic_template_data: { name },
     };

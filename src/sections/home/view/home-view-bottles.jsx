@@ -5,7 +5,7 @@ import Stack from '@mui/material/Stack';
 import { BackToTop } from 'src/components/animate/back-to-top';
 import { ScrollProgress, useScrollProgress } from 'src/components/animate/scroll-progress';
 
-import { HomeHero } from '../home-hero';
+import { HomeHeroBottles } from '../home-hero-bottles';
 import { HomeFAQs } from '../home-faqs';
 import { HomeZoneUI } from '../home-zone-ui';
 import { HomeMinimal } from '../home-minimal';
@@ -32,7 +32,7 @@ export function HomeViewBottles() {
 
       <BackToTop />
 
-      <HomeHero />
+      <HomeHeroBottles />
 
       <Stack sx={{ position: 'relative', bgcolor: 'background.default' }}>
         <HomeHighlightFeatures />

@@ -20,7 +20,14 @@ const TENANT_CONFIGS = {
       }
     },
     favicon: '/favicon-butilkinaedro.ico',
-    mailTemplates: 'butilkinaedro',
+    mailSender: 'no-reply@butilkinaedro.com',
+    mailTemplates: {
+      createOrder: 'd-6c17d65a6f904e92ad47ceb011f0c94b',
+      contactForm: 'd-2983f3d43b9a4827a0779187163e1197',
+      singUp: 'd-a15afe6217b04ce8a78b98b627eeea18',
+      resetPassword: 'd-16244e0657074f47bcebe1193bc5b685',
+      sendCode: 'd-30d434bcf35f4ab6bf06bf1528f1ff5a'
+    },
     theme: {
       fontFamily: 'Public Sans',
       borderRadius: 8
@@ -46,14 +53,21 @@ const TENANT_CONFIGS = {
       }
     },
     favicon: '/favicon-ranicinaedro.ico',
-    mailTemplates: 'ranicinaedro',
+    mailSender: 'no-reply@butilkinaedro.com',
+    mailTemplates: {
+      createOrder: 'd-6c17d65a6f904e92ad47ceb011f0c94b',
+      contactForm: 'd-2983f3d43b9a4827a0779187163e1197',
+      singUp: 'd-a15afe6217b04ce8a78b98b627eeea18',
+      resetPassword: 'd-16244e0657074f47bcebe1193bc5b685',
+      sendCode: 'd-30d434bcf35f4ab6bf06bf1528f1ff5a'
+    },
     theme: {
       fontFamily: 'Inter',
       borderRadius: 12
     }
   },
   // Add other 3 tenants here...
-  textile: {
+  shapkinaedro: {
     name: 'Textile Solutions',
     description: 'Professional textile solutions',
     appName: 'Textile Solutions',
@@ -66,7 +80,14 @@ const TENANT_CONFIGS = {
       full: '/logo/textile_logo_full.svg'
     },
     favicon: '/favicon-textile.ico',
-    mailTemplates: 'textile',
+    mailSender: 'no-reply@butilkinaedro.com',
+    mailTemplates: {
+      createOrder: 'd-6c17d65a6f904e92ad47ceb011f0c94b',
+      contactForm: 'd-2983f3d43b9a4827a0779187163e1197',
+      singUp: 'd-a15afe6217b04ce8a78b98b627eeea18',
+      resetPassword: 'd-16244e0657074f47bcebe1193bc5b685',
+      sendCode: 'd-30d434bcf35f4ab6bf06bf1528f1ff5a'
+    },
     theme: {
       fontFamily: 'Nunito Sans',
       borderRadius: 6

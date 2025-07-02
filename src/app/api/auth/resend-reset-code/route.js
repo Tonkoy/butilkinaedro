@@ -2,7 +2,9 @@ import connectDB from "src/utils/connectDB";
 import PasswordReset from "src/mongo/models/PasswordReset";
 import Users from "src/mongo/models/User";
 import sgMail from "@sendgrid/mail";
-
+import {getCurrentTenant, getTenantConfig} from "../../../../config-tenants";
+const currentTenant = getCurrentTenant();
+const tenantConfig = getTenantConfig(currentTenant);
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 function generateSixDigitCode() {
@@ -32,8 +34,8 @@ export async function POST(req) {
     // Send email
     const msg = {
       to: email,
-      from: "no-reply@brandirano.com",
-      templateId: "d-16244e0657074f47bcebe1193bc5b685", // update for code
+      from: tenantConfig.mailSender,
+      templateId: tenantConfig.mailTemplates.resetPassword, // update for code
       dynamic_template_data: {
         name: user.name,
         resetCode: code,

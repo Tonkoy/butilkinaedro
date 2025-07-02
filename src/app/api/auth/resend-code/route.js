@@ -2,7 +2,9 @@ import connectDB from "src/utils/connectDB";
 import Users from "src/mongo/models/User";
 import Activation from "src/mongo/models/Activation";
 import sgMail from "@sendgrid/mail";
-
+import {getCurrentTenant, getTenantConfig} from "../../../../config-tenants";
+const currentTenant = getCurrentTenant();
+const tenantConfig = getTenantConfig(currentTenant);
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 function generateSixDigitCode() {
@@ -39,8 +41,8 @@ export async function POST(req) {
     // Send new code by email
     const msg = {
       to: email,
-      from: "no-reply@boilerplate.com",
-      templateId: "d-30d434bcf35f4ab6bf06bf1528f1ff5a",
+      from: tenantConfig.mailSender,
+      templateId: tenantConfig.mailTemplates.sendCode,
       dynamic_template_data: {
         name: `${user.firstName} ${user.lastName}`,
         activationLink: `${process.env.LOCALHOST_URL}/auth/verify?email=${email}`,
