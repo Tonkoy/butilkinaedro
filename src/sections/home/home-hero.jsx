@@ -152,7 +152,7 @@ export function HomeHero({ sx, ...other }) {
         <Stack alignItems="center" spacing={2.5}>
           <Button
             component={RouterLink}
-            href={paths.dashboard.root}
+            href={paths.products.root}
             color="inherit"
             size="large"
             variant="contained"
@@ -171,7 +171,7 @@ export function HomeHero({ sx, ...other }) {
           variant="outlined"
           target="_blank"
           rel="noopener"
-          href={paths.figmaUrl}
+          href={paths.auth.jwt.signUp}
           sx={{ borderColor: 'text.primary' }}
         >
           Регистрирай се
