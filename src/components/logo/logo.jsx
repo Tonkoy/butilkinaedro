@@ -21,7 +21,7 @@ export const Logo = forwardRef(
       <Box
         alt="Single logo"
         component="img"
-        src={`${CONFIG.assetsDir}${CONFIG.tenantConfig.logos.single}`}
+        src={`${CONFIG.tenantConfig.logos.single}`}
         width="100%"
         height="100%"
       />
@@ -31,7 +31,7 @@ export const Logo = forwardRef(
       <Box
         alt="Full logo"
         component="img"
-        src={`${CONFIG.assetsDir}${CONFIG.tenantConfig.logos.full}`}
+        src={`${CONFIG.tenantConfig.logos.full}`}
         width="100%"
         height="100%"
       />
